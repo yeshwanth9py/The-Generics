@@ -14,7 +14,7 @@ Array.from(document.querySelectorAll(".shop-item-button")).forEach((v)=>{
         const img = v.parentElement.parentElement.querySelector(".img");
         const title = v.parentElement.parentElement.querySelector("span").innerHTML;
         const price = v.parentElement.parentElement.querySelectorAll("span")[1].innerHTML;
-        console.log("adding to cart");
+        alert("added to cart");
         addtocart(img.src,title,price);
     });
 });
@@ -40,7 +40,7 @@ function addtocart(src,title,price){
     cartrow.appendChild(cartt);
     removebtn(cartt.querySelector(".btn-danger"));
     updateinput();
-    //updateprice();
+    updateprice();
 };
 
 function updateinput(){
