@@ -141,6 +141,7 @@ nav ul {
     font-weight: lighter;
     padding-left: 2em;
     padding-right: 2em;  /*space inside button*/
+    cursor:pointer;
 }
 
 .btn-header:hover {
